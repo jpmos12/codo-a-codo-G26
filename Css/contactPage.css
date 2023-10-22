@@ -1,0 +1,98 @@
+
+body{
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 80px 5fr 100px ;
+    padding: 0;
+    min-height: 100vh;
+    margin: 0;
+    grid-template-areas:
+        "headerA headerA"
+        "form carrusel"
+        "footer footer";
+}
+
+.header{
+    grid-area: headerA; /* declaracion de variable*/
+    background-color: #000000;
+    color:white;
+    padding: 1rem;
+
+}
+
+.form{
+    grid-area: form;
+    /*background-color: yellow;*/
+    color: black;
+    padding: 1rem;
+}
+
+.carrusel{
+    grid-area: carrusel;
+    /*background-color: green;*/
+    color: black;
+    padding: 1rem;
+}
+
+.footerContact{
+    grid-area: footer;
+    background-color: #00aae4;
+    /*background-color: red;*/
+    padding: 1rem;
+    color: aliceblue;
+    text-align: center;
+}
+
+.titulo{
+    display: grid;
+    place-items: center;
+}
+
+#menu{
+    float: right;
+    margin-top: 10px;
+
+}
+#menuImg{
+    float: left;
+
+}
+#a{
+    background-color: #00aae4;
+    color: white;
+    border-radius: 10px;
+    margin-top: 80px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+h2{
+    color: #00aae4;
+}
+
+#formH3{
+    margin-top: 10px;
+    font-weight: normal !important;
+    color: white;
+    font-size: 18.5px;
+}
+
+/*******************************************************/
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    body{
+        display:grid;
+        grid-template-columns: 2fr 2fr;
+        /*grid-template-rows: 80px 350px 1fr 250px 110px ;*/
+        grid-template-rows: 80px 3fr 2fr 110px ;
+        padding: 0;
+        min-height: 100vh;
+        margin: 0;
+        grid-template-areas:
+            "headerA headerA"
+            "form form"
+            "carrusel carrusel"
+            "footer footer";
+    }
+}
+

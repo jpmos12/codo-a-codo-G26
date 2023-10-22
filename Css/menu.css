@@ -1,0 +1,91 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    /*background-color: red;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    /*NEW*/
+    background-color: #00aae4;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: #0CD7F2;
+}
+
+.icono-menu {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .menu{
+        display: none;
+        flex-direction: column;
+        background-color: #00aae4;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .menu a {
+        color: white;
+        border-radius: 0px;
+        padding: 0px;
+        margin-left: 5px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .icono-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    
+    h3{
+        font-size: 15px;
+    }
+    
+    #mision #vision{
+        display: block;
+    }
+}

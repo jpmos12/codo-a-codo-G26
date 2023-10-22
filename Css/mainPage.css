@@ -1,0 +1,154 @@
+
+body{
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 80px 350px 1fr 1fr 100px ;
+    padding: 0;
+    min-height: 100vh;
+    margin: 0;
+    grid-template-areas:
+        "headerA headerA"
+        "nav nav"
+        "main sidebar"
+        "valores valores"
+        "footer footer";
+}
+
+.header{
+    grid-area: headerA; /* declaracion de variable*/
+    background-color: #000000;
+    color:white;
+    padding: 1rem;
+
+}
+
+.nav{
+    grid-area: nav;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    background-image: url("../Img/mainBanner.png")
+}
+
+.main{
+    grid-area: main;
+    padding: 1rem;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+}
+
+.valores{
+    grid-area: valores;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #00aae4;
+    padding: 1rem;
+    color: aliceblue;
+    text-align: center;
+}
+
+.titulo{
+    display: grid;
+    place-items: center;
+}
+
+#menu{
+    float: right;
+    margin-top: 10px;
+
+}
+#menuImg{
+    float: left;
+
+}
+#a{
+    background-color: #00aae4;
+    color: white;
+    border-radius: 10px;
+    margin-top: 80px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.mision{
+    background-color: white;
+    border: solid 2px #00aae4;
+    border-color: #00aae4;
+    border-radius: 30px;
+    height: auto;
+    text-align: center;
+    padding: 12px;
+    box-shadow: 0px 0px 10px 0px #00aae4 inset;
+
+}
+
+.vision{
+    background-color: white;
+    border: solid 2px #00aae4;
+    border-color: #00aae4;
+    border-radius: 30px;
+    height: auto;
+    text-align: center;
+    padding: 12px;
+    box-shadow: 0px 0px 10px 0px #00aae4 inset;
+
+}
+
+.value{
+    background-color: white;
+    border: solid 2px #00aae4;
+    border-color: #00aae4;
+    border-radius: 30px;
+    height: auto;
+    text-align: center;
+    padding: 12px;
+    box-shadow: 0px 0px 10px 0px #00aae4 inset;
+
+}
+
+#justiH{
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+#justiUl{
+    text-align: justify;
+}
+
+h2{
+    color: #00aae4;
+}
+
+h3{
+    font-weight: normal;
+}
+
+/*******************************************************/
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    body{
+        display:grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 80px 350px 275px 275px 1fr 110px ;
+        padding: 0;
+        min-height: 100vh;
+        margin: 0;
+        grid-template-areas:
+            "headerA headerA"
+            "nav nav"
+            "main main"
+            "sidebar sidebar"
+            "valores valores"
+            "footer footer";
+    }
+}
